@@ -14,7 +14,7 @@
           <el-button type="primary">添加角色</el-button>
         </el-col>
       </el-row>
-      <el-table :data="rolesList" border stripe>
+      <el-table :data="roleslist" border stripe>
         <!-- 展开列 -->
         <el-table-column type="expand">
           <template slot-scope="scope">
@@ -90,7 +90,7 @@
 export default {
   data() {
     return {
-      rolesList: [],
+      roleslist: [],
       // 添加对话框的显示或隐藏
       editDialogVisible: false,
       // 查询到的用户信息对象
@@ -128,7 +128,7 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error('获取角色列表失败')
       }
-      this.rolesList = res.data
+      this.roleslist = res.data
     },
     async showRoleEditDialog(id) {
       const { data: res } = await this.$http.get('roles/' + id)
