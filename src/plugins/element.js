@@ -28,7 +28,10 @@ import {
   Tree,
   Select,
   Option,
-  Cascader
+  Cascader,
+  Alert,
+  Tabs,
+  TabPane
 } from 'element-ui'
 // 导入弹框组件
 // Message需要进行全局挂载
@@ -60,6 +63,9 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 // 全局 每一个组件都可以访问弹框
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

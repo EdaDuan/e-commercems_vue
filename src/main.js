@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import './plugins/element.js'
 import './assets/fonts/iconfont.css'
+import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
 import TreeTable from 'vue-table-with-tree-grid'
 
