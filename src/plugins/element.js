@@ -38,6 +38,10 @@ import {
   Checkbox,
   Upload
 } from 'element-ui'
+
+import TimelineItem from './timeline-item/index.js'
+import Timeline from './timeline/index.js'
+
 // 导入弹框组件
 // Message需要进行全局挂载
 
@@ -76,6 +80,9 @@ Vue.use(Step)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(TimelineItem)
+Vue.use(Timeline)
+
 // 全局 每一个组件都可以访问弹框
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
